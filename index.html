@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090914"><title>LaughLens — Funny Camera</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="brand"><b>😂</b><div><strong>LaughLens</strong><small>Funny Camera Lab</small></div></div><button id="flipBtn">↔ Flip Camera</button></header>
+<main>
+<section class="hero"><span>📸 LIVE FUN MODE</span><h1>Turn every click into a <em>laugh.</em></h1><p>Choose a ridiculous effect, strike a pose and create your next LaughLens moment.</p></section>
+<section class="studio">
+<div class="card">
+<div id="stage"><video id="video" autoplay playsinline muted></video><canvas id="canvas" hidden></canvas><div id="emoji">😂</div><label>● LIVE</label></div>
+<div class="controls"><button id="startBtn" class="primary">▶ Start Camera</button><button id="captureBtn" class="shutter">●</button><button id="saveBtn" disabled>💾 Save Snap</button></div>
+<p id="status">Camera is ready. Tap Start Camera.</p>
+<div class="fields"><label>Nickname<input id="nickname" maxlength="50" value="Laugher"></label><label>Caption<input id="caption" maxlength="180" placeholder="Write something funny..."></label></div>
+</div>
+<aside class="card"><div class="head"><div><small>EFFECT LAB</small><h2>Pick your chaos</h2></div><b id="effectCount">0</b></div><div id="effects" class="effects"></div></aside>
+</section>
+<section class="card moments"><div class="head"><div><small>COMMUNITY WALL</small><h2>Recent LaughLens Moments</h2></div><button id="refreshBtn">↻ Refresh</button></div><div id="moments"></div></section>
+</main>
+<footer><b>LaughLens</b> · Spring Boot + JDBC + H2 + JavaScript · Camera frames stay in your browser.</footer>
+<script src="app.js"></script>
+</body></html>
